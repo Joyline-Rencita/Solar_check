@@ -1,0 +1,94 @@
+
+body {
+    background-color: #87CEEB;
+}
+#menubar {
+    margin: -20px;
+    background-color: #021359;
+    color: skyblue;
+    height: 60px;
+    font-size: 20px;
+}
+.menuList {
+    list-style-type: none;
+    margin-left: 650px;
+    padding-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu {
+    display: inline;
+    margin-left: 30px;
+}
+a {
+    text-decoration: none;
+    color: rgb(178, 230, 250);
+}
+.menu:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(1, 182, 254);
+    cursor: pointer;
+}
+.menu:hover a{
+    color: rgb(1, 182, 254);
+} 
+
+#icon {
+    background-position: center;
+    z-index: 9;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 20px;
+} 
+#icon1 {
+    position: absolute;
+    left: 70px;
+    font-size: 24px;
+    color: #FCD440;
+}
+#chartdiv2 {
+    height: 490px;
+    margin-left: -10px;
+    margin-top: 19px;
+}
+
+#p1{
+    margin-left: 45%;
+}
+#chartdiv1 {
+    margin-left: 15%;
+    width : 15%;
+}
+#checkboxes {
+    position: absolute;
+    left: calc(50% + 300px);
+    top: calc(50% + 40px);
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+}
+#check1{
+  background-color: rgb(142, 195, 194);
+}
+#check2{
+    background-color: #37d6c1;
+  }
+  #check3{
+    background-color: #09986b;
+  }
+  #check4{
+    background-color: #289b0b;
+  }
+  #check5{
+    background-color: #3c6703;
+  }
+.main {
+    display: flex;
+  flex-direction: row;
+}
