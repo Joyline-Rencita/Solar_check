@@ -5,6 +5,52 @@ body{
     background-color: #efefef;
 
 }
+#menubar {
+    margin: -20px;
+    background-color: #021359;
+    color: skyblue;
+    height: 60px;
+    font-size: 20px;
+}
+.menuList {
+    list-style-type: none;
+    margin-left: 650px;
+    padding-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu {
+    display: inline;
+    margin-left: 30px;
+}
+a {
+    text-decoration: none;
+    color: rgb(178, 230, 250);
+}
+.menu:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(1, 182, 254);
+    cursor: pointer;
+}
+.menu:hover a{
+    color: rgb(1, 182, 254);
+} 
+
+#icon {
+    background-position: center;
+    z-index: 9;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 20px;
+} 
+#icon1 {
+    position: absolute;
+    left: 70px;
+    font-size: 24px;
+    color: #FCD440;
+}
 .container{
     margin-left: auto;
     margin-right: auto;
@@ -66,7 +112,7 @@ input[type="text"] {
 #desc, #desc1 {
     display: none;
     position: absolute;
-    left: 230px;           
+    left: 100px;           
     width: 1000px;
     height: 190px;
     padding: 30px;
@@ -114,3 +160,5 @@ input[type="text"] {
     background-color: rgb(93, 139, 184);
     color: rgb(229, 226, 241);
 }
+
+
