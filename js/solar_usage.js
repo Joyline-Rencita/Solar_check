@@ -64,13 +64,13 @@ function checkWeather(weather) {
     str = '';
     if (weather == "overcast clouds" || weather == "mostly cloudy"|| weather == "broken clouds" || weather == "shower rain" || weather == "rain" || weather == "thunderstorm") {
         imgElement  = "weather-app-img/rain.png";
-        str='cannot make use of solar heater';
+        str='Its Raining!!!<br> water cannot be heated above 495 Faranheit';
     } else if (weather == "partly cloudy" || weather == "few clouds" ||weather == "scattered clouds") {
         imgElement  = "weather-app-img/clouds.png";
-        str='less amount of sunlight<br> Make minimal use';
+        str=' Less amount of sunlight<br> Make minimal use';
     } else if (weather == "drizzle" || weather == "light rain") {
         imgElement  = "weather-app-img/drizzle.png";
-        str='Less light exposure!!<br> ';
+        str='Less light exposure due to !!<br> ';
     } else if (weather == "sunny" || weather == "clear sky"){
         imgElement  = "weather-app-img/clear.png";
         str='Sunny<br> You can make best use of solar heater';
@@ -84,7 +84,7 @@ function checkWeather(weather) {
     }
     else{
         imgElement="weather-app-img/snow.png";
-        str='7';
+        str='Snowfall!!<br> You cannot make use of solar heater';
     }
     document.getElementById('image').innerHTML = "<img src=\""+imgElement+"\">";
     document.getElementById('desc').style.display = "inline";
