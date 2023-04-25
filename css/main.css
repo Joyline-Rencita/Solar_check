@@ -23,14 +23,6 @@ a {
     text-decoration: none;
     color: rgb(178, 230, 250);
 }
-img {
-    position: static;
-    top: 55px;
-    left: 0;
-    height: 500px;
-    width: 100%;
-    z-index: -5;
-}
 .menu:hover {
     padding-bottom: 5px;
     border-bottom: 2px solid rgb(1, 182, 254);
@@ -55,6 +47,15 @@ img {
     left: 70px;
     font-size: 24px;
     color: #FCD440;
+}
+
+img {
+    position: static;
+    top: 55px;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    z-index: -5;
 }
 #subheading , #review{
     margin: 20px;
