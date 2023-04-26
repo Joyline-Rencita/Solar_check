@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+/* -------------MENUBAR ----------------- */
+#menubar {
+    background-color: #021359;
+    color: skyblue;
+    height: 60px;
+    font-size: 20px;
+}
+.menuList {
+    list-style-type: none;
+    margin-left: 700px;
+    padding-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu {
+    display: inline;
+    margin-left: 30px;
+}
+a {
+    text-decoration: none;
+    color: rgb(178, 230, 250);
+}
+.menu:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(1, 182, 254);
+    cursor: pointer;
+}
+.menu:hover a{
+    color: rgb(1, 182, 254);
+} 
+
+#icon {
+    background-position: center;
+    z-index: 9;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 20px;
+} 
+#icon1 {
+    position: absolute;
+    left: 70px;
+    font-size: 24px;
+    color: #FCD440;
+}
+
+img {
+    position: static;
+    top: 55px;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    z-index: -5;
+}
+#subheading , #review{
+    margin: 20px;
+    margin-top: 40px;
+    font-size: 30px;
+    color: #021359;
+}
+.facts {
+    position: absolute;
+    top: 680px;
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    padding: 10px;
+    grid-gap: 50px;
+    margin-left: 80px;
+}
+.fact{
+    background-color: #021359;
+    font-size: 18px;
+    text-align: justify;
+    text-align: center;
+    padding: 35px 25px;
+    border-radius: 5%;
+    color: rgb(178, 230, 250);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    margin-top: 50px;
+    color: #021359;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    height: 0;
+    width: 0;
+    background-color: white;
+}
+.prev {
+    position: relative;
+    top: -260px;
+    left: -50px;
+}
+#previous {
+    visibility: visible;
+}
+.next {
+    margin-top: -210px;
+    margin-left: 740px;
+    border-radius: 3px 0 0 3px;
+}
+#next {
+    visibility: visible;
+}
+.prev:hover, .next:hover {
+    color: rgb(42, 113, 141);
+}
+.numbertext {
+    position: relative;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 10px 12px;
+    position: absolute;
+    top: 6px;
+    padding-left: 0;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+#review {
+    position: relative;
+    top: 330px;
+}
+#rating {
+    height: 60px;
+    width: 60px;
+    padding: 0 10px;
+}
+#revDiv {
+    position: relative;
+    top: 40px;
+    left: 60px;
+    height: auto;
+    padding: 20px;
+    margin: 40px 0;
+}
+.rev {
+    width: 800px;
+    padding: 20px;
+    margin: 10px 30px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 1%;
+    font-size: 18px;
+    background-color: #021359;
+    color: #f2f2f2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#nameInput {
+    font-size: 20px;
+    margin: 30px 50px 20px 50px;
+}
+
+input[type=text] {
+    height: 25px;
+    font-size: 14px;
+    width: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+textarea {
+    margin: 0 50px;
+    font-size: 14px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#submit {
+    position: relative;
+    top: 10px;
+    left: 390px;
+    height: 40px;
+    width: 120px;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #021359;
+    color: #f2f2f2;
+    border-radius: 6%;
+}
+#submit:hover {
+    color: rgb(1, 182, 254);
+}

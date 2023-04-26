@@ -1,42 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        
-        <title>India map</title>
-<style>
-    #chartdiv2 {
-        margin-top: 100px;
-        width	: 85%;
-        height	: 430px;
-        
-    }
-    #p1{
-        margin-left: 45%;
-    }
-    #chartdiv1 {
-        margin-left: 15%;
-        width : 15%;
-    }
-    
-</style>
-    </head>
-    <body>
-        <p id="p1">Carbon-Emission</p>
-        <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
-<script src="https://www.amcharts.com/lib/3/maps/js/indiaLow.js"></script>
-<script src="https://www.amcharts.com/lib/3/themes/none.js"></script>
-<div id="chartdiv1"></div>
-
-<div id="chartdiv2"></div>
- <script>           
 var map;
 AmCharts.ready( function() {
     map = new AmCharts.AmMap();
     map.panEventsEnabled = true;
-    map.backgroundColor = "#021359";
+    map.backgroundColor = "#87CEEB";
     map.backgroundAlpha = 1;
-    map.width = 1000;
-    map.height = 3000;
+    map.width = 1200;
+    map.height = 2900;
 
     map.zoomControl.panControlEnabled = true;
     map.zoomControl.zoomControlEnabled = true;
@@ -84,26 +53,3 @@ AmCharts.ready( function() {
     
     map.write( "chartdiv2" );
 } );
-
-
-
-let a = fetch("https://www.carboninterface.com/api/v1/auth", {
-    headers: {
-        "Authorization": "Bearer 8vHiI0CHYkyzOgNzqsIVuA"
-    }
-})
-.then(res =>
-    res.json())
-    .then((data) => {
-    console.log(data)
-
-})
-.then(data => console.log(data))
-.catch(error => console.log('ERROR'))
-</script>
-
-<div id="container"></div>
-        </main>
-    
-    </body>
-</html>

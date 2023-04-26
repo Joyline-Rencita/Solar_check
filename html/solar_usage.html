@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
-    <script src="js/solar_usage.js"></script>
-    <link rel="stylesheet" href="css/solar_usage.css">
+    <script src="../js/solar_usage.js"></script>
+    <link rel="stylesheet" href="../css/solar_usage.css">
 </head>
 <body>
+    <header>
+        <div id="menubar">
+            <ul class="menuList">
+                <li class="menu"><img id="icon" src="../images/sun.png" alt="logo"/><div id="icon1">Sun Track</div></li>
+                <li class="menu"><a href="index.html">Home</a></li>
+                <li class="menu"><a href="solar_usage.html">Solar Usage</a></li>
+                <li class="menu"><a href="map.html">Emission Rate</a></li>
+                <li class="menu"><a href="contact.html">Contact Us</a></li>
+              </ul>
+        </div>
+    </header>
     <div class="container">
         <p id="heading">Enter City Name: <input type="text" id="city" placeholder=" City "></p>
         <p><button class="action" onclick="getData()">Enter</button></p>
@@ -20,14 +31,14 @@
         </div>        
     </div>
     <div id="desc">
-        <div id="sol"><img id="solar_car" src="weather-app-img/car.png" alt="No Image"></div>
+        <div id="sol"><img id="solar_car" src="../images/car.png" alt="No Image"></div>
         <p id="p1">Solar Car :</p>
         <p id="p2">Destination :<input type="text" id="destName" name="destName" placeholder="Enter your Destination"><button id="btn" onClick="getWeather(document.getElementById('destName').value)">Submit</button></p>
         <p id="suggestion"></p>
     </div>
 
     <div id="desc1">
-        <div id="heater"><img id="solar_heater" src="weather-app-img/heater.jpg" alt="No Image"></div>
+        <div id="heater"><img id="solar_heater" src="../images/heater.jpg" alt="No Image"></div>
         <p id="p4">Solar Heater :</p>
         <p id="suggestion1"></p>
     </div>
@@ -36,4 +47,3 @@
 
 </body>
 </html>
-<!--https://www.shutterstock.com/image-vector/cartoon-animated-weather-web-icon-clipart-2195622737-->
