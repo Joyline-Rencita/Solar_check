@@ -1,8 +1,9 @@
 
 function getData() {
     var cityname = document.getElementById("city").value;
+    var apiKey = '';
     var temp = "";
-    const url = "https://api.openweathermap.org/data/2.5/weather?q="+cityname+"&units=metric&appid=6bfe8d2f824cb82d1425f60737c2cc4e";
+    const url = "https://api.openweathermap.org/data/2.5/weather?q="+cityname+"&units=metric&appid="+apiKey;
     fetch(url)
     .then((res) => 
           res.json())
@@ -21,7 +22,7 @@ function getData() {
 function getWeather(loc) {
     var temp = "";
     str = '';
-    const url = "https://api.openweathermap.org/data/2.5/weather?q="+loc+"&units=metric&appid=6bfe8d2f824cb82d1425f60737c2cc4e";
+    const url = "https://api.openweathermap.org/data/2.5/weather?q="+loc+"&units=metric&appid="+apiKey;
     fetch(url)
     .then((res) => 
           res.json())
