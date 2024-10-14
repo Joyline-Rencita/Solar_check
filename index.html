@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div id="menubar">
+            <ul class="menuList">
+                <li class="menu"><img id="icon" src="../images/sun.png" alt="logo"/><div id="icon1">Sun Track</div></li>
+                <li class="menu"><a href="index.html">Home</a></li>
+                <li class="menu"><a href="solar_usage.html">Solar Usage</a></li>
+                <li class="menu"><a href="map.html">Emission Rate</a></li>
+                <li class="menu"><a href="contact.html">Contact Us</a></li>
+              </ul>
+        </div>
+    </header>
+    <section>
+        <img src="../images/background.jpeg" alt="Solar Image" />
+        <p id="subheading">Facts on Solar Energy</p>
+        <div class="facts">
+            <div class="fact"><div class="numbertext">1 / 6</div>California’s Mojave Desert is home to Ivanpah Solar Power Facility, the world’s largest operating solar thermal energy plant. It uses concentrating solar power (CSP) technology to focus 173,500 heliostats, each containing two mirrors, onto boilers located in three power towers. </div>
+            <div class="fact"><div class="numbertext">2 / 6</div>As prices continue to fall, solar energy is increasingly becoming an economical energy choice for American homeowners and businesses. Still, the biggest hurdle to affordable solar energy remains the soft costs -- like permitting, zoning and hooking a solar system up to the power gird. </div>
+            <div class="fact"><div class="numbertext">3 / 6</div>Today, demand for solar in the United States is at an all-time high. The amount of solar power installed in the U.S. has increased more than 23 times over the past eight years -- from 1.2 gigawatts (GW) in 2008 to an estimated 27.4 GW at the end of 2015</div> 
+            <div class="fact"><div class="numbertext">4 / 6</div>The space industry was an early adopter of solar technology. In the 1950s, the space industry began to use solar technology to provide power aboard spacecraft. The Vanguard 1 remains the oldest manmade satellite in orbit logging more than 6 billion miles.</div>
+            <div class="fact"><div class="numbertext">5 / 6</div>The first silicon solar cell, the precursor of all solar-powered devices, was built by Bell Laboratories in 1954. On the first page of its April 26, 1954 issue, The New York Times proclaimed the milestone, </div>
+            <div class="fact"><div class="numbertext">6 / 6</div>Solar energy is the most abundant energy resource on earth -- 173,000 terawatts of solar energy strikes the Earth continuously. That's more than 10,000 times the world's total energy use.</div>
+            <div class="prev" id="previous" onclick="minusSlides(1)">&#10094;</div>
+            <div class="next" id="next" onclick="plusSlides(1)">&#10095;</div>
+          </div>
+          <div id="review">
+            <p>Reviews<img id="rating" src="../images/rating.png" alt="Rating Image"/></p>
+            <div id="revDiv"></div>
+            <p id="reviewArea">
+                <p id ="nameInput">Name : <input type="text" id="name" name="name" placeholder="Enter your Name"/></p>
+                <textarea id="reviewData" name="reviewData" rows="7" cols="100" placeholder="Enter your review"></textarea>
+                <p><input type="button" id="submit" onClick="display()" value="Submit"/></p>
+            </p>
+          </div>
+    </section>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
